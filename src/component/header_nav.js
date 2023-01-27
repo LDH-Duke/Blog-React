@@ -14,6 +14,9 @@ export default function header_nav(){
                             <li>eBook</li>
                         </ul>
                     </div>
+                    <div>
+                        노트북에 복제 완료
+                    </div>
                 </div>
             </div>
         </div>
