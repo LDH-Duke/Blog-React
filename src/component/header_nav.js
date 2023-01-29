@@ -6,16 +6,15 @@ export default function header_nav(){
                     <div className="nav-logo">
                         <span className="logo">Just-Do BookStore</span>
                     </div>
-                    <div className="nav-list">
+                    <div className="nav-categori">
                         <ul>
-                            <li>국내 도서</li>
-                            <li>외국 도서</li>
-                            <li>중고 도서</li>
-                            <li>eBook</li>
+                            <li><a href="#">여행 리뷰</a></li>
+                            <li><a href="#">맛집 리뷰</a></li>
+                            <li><a href="#">옷 리뷰</a></li>
                         </ul>
                     </div>
-                    <div>
-                        노트북에 복제 완료
+                    <div className="nav-myInfo">
+                        <span className="nickname">이동희님</span>
                     </div>
                 </div>
             </div>

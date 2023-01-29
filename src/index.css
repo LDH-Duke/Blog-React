@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,24 +18,33 @@ code {
     monospace;
 }
 
-div {
-  box-sizing: border-box;
-}
-
-ul {
+ul li, a, span{
+  text-decoration: none;
+  text-align: center;
+  color: white;
   list-style: none;
+  
 }
 
 .nav {
   background: black;
   color: white;
+
+  
+}
+
+.nav-item-group {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
 }
 
 .nav-logo {
-  flex: 1;
+  
 }
 
-.nav-list{
-  flex:1;
+.nav-categori li {
+  display: inline-block;
+  padding: 0px 20px;
 }
