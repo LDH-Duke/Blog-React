@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header_Nav from './component/header_nav';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './component/main';
+import EditPost from './component/editpost';
+
+
 
 function App() {
 
@@ -11,11 +14,12 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Header_Nav />}></Route>
+          <Route path="/" element={<Main />}></Route>
+          <Route path="/editpost" element={<EditPost />}></Route>
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
