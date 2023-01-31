@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header_Nav from './component/header_nav';
 
 function App() {
 
@@ -9,23 +11,11 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header-nav">
-        <div className='nav-logo'>
-          <span>Blog</span>
-        </div>
-        <button onClick={()=>{}}>정렬</button>
-      </div>
-      <div className='list'>
-          <ul>
-            <li>
-              <h4>{subject[0]}<span onClick={()=>{goodCount = [...goodCount]; goodCount[0] += 1; addCount(goodCount)}}>👍</span>{goodCount[0]}</h4>
-              <p>2월17일 발행</p>
-              <button onClick={()=>{let copy=[...subject]; copy[0] = '전포 맛집 추천'; subjectUpdate(copy)}}>변경</button>
-            </li>
-            <li><h4>{subject[1]}<span onClick={()=>{goodCount = [...goodCount]; goodCount[1] += 1; addCount(goodCount)}}>👍</span>{goodCount[1]}</h4><p>2월18일 발행</p></li>
-            <li><h4>{subject[2]}<span onClick={()=>{goodCount = [...goodCount]; goodCount[2] += 1; addCount(goodCount)}}>👍</span>{goodCount[2]}</h4><p>2월19일 발행</p></li>
-          </ul>
-        </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Header_Nav />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
