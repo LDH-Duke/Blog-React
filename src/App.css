@@ -4,6 +4,7 @@
   width: 480px;  
   height: 100vh;
   background: white;
+  overflow-y: auto;
 }
 
 h1 {

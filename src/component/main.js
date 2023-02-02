@@ -1,6 +1,6 @@
 import React from 'react'
 
-function main() {
+function Main() {
   return (
     <div className='main'>
         <h1>Blog-Supporter</h1>
@@ -14,4 +14,4 @@ function main() {
   )
 }
 
-export default main
+export default Main
