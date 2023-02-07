@@ -11,13 +11,24 @@ h1 {
   margin: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover{
+  box-shadow: 3px 3px 3px 3px #575858;
+}
+
+ul {
+  list-style: none;
+  padding: 0 10px
+}
+li {
+  margin: 20px 0px;
+}
+
 /* 메인페이지*/
 
 /* 글쓰기 버튼 */
-.main>a {
-  text-decoration: none;
-}
-
 .edit_button {
   text-align: right;
 }
@@ -27,10 +38,11 @@ h1 {
   background-color: #676869;
   border-radius: 10%;
   color: white;
-  margin: 0 10px ;
+  margin: 0 10px;
   padding: 5px;
 }
 
+/* ============================ */
 /* 게시물 페이지 */
 
 /* 제목 입력 */
@@ -51,6 +63,12 @@ h1 {
 
 /* 작성완료 버튼 */
 .submit_btn {
-  margin: 7px;
+  order: 1px solid #676869;
+  background-color: #676869;
+  border-radius: 10%;
+  color: white;
+  margin: 0 10px;
+  padding: 5px;
 }
+
 
